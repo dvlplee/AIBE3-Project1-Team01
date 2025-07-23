@@ -48,7 +48,7 @@ export default function useTourApiList({
           } else {
             const coords = AREA_COORDS[areaCode] || AREA_COORDS[1];
             const { mapX, mapY } = coords;
-            url = `http://apis.data.go.kr/B551011/KorService2/locationBasedList2?serviceKey=${encodedKey}&numOfRows=${numOfRows}&pageNo=${pageNo}&MobileOS=ETC&MobileApp=AppTest&_type=json&mapX=${mapX}&mapY=${mapY}&radius=20000`;
+            url = `https://apis.data.go.kr/B551011/KorService2/locationBasedList2?serviceKey=${encodedKey}&numOfRows=${numOfRows}&pageNo=${pageNo}&MobileOS=ETC&MobileApp=AppTest&_type=json&mapX=${mapX}&mapY=${mapY}&radius=20000`;
             if (areaCode !== "") url += `&areaCode=${areaCode}`;
             if (contentTypeId !== "") url += `&contentTypeId=${contentTypeId}`;
             if (cat1 !== "") url += `&cat1=${cat1}`;
